@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">   
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+<link rel="icon" href="aboutme1.jpg" class="rounded-circle">
+<title>AboutMe</title>
+<style>
+       
+        .a
+        {
+            color: rgb(0, 0, 0);
+
+        }
+        #b:hover
+        {
+            text-decoration: none;
+            color: #fff;
+        }
+     
+        #inputEmail
+        {
+            background: transparent;
+            border-bottom: 1px solid rgb(0, 0, 0);
+            border-top: none;
+            border-right: none;
+            border-left: none;
+        }
+        #inputName
+        {
+           
+            background: transparent;
+            border-bottom: 1px solid rgb(0, 0, 0);
+            border-top: none;
+            border-right: none;
+            border-left: none;
+        }
+        #inputMessage
+        {
+           
+            background: transparent;
+            border-bottom: 1px solid rgb(0, 0, 0);
+            border-top: none;
+            border-right: none;
+            border-left: none;
+        }
+		
+        @media screen and (max-width: 680px)
+        {
+            #hide
+            {
+                display: none;
+            }
+        }
+        .con {
+    position: relative;
+  }
+  
+  .image {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+  
+  .con {
+    position: relative;
+    overflow: hidden;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.85);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: scale(0);
+    transition: transform 0.3s ease-in-out;
+    border-radius: 20px;
+    padding: 20px;
+    text-align: left;
+}
+
+.con:hover .overlay {
+    transform: scale(1);
+}
+
+.overlay .text {
+    color: #000;
+}
+
+.overlay h3 {
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.overlay ul {
+    padding-left: 20px;
+    list-style-type: square;
+}
+
+.overlay a {
+    color: #000;
+    text-decoration: none;
+    display: block;
+    margin-top: 5px;
+}
+
+.overlay a:hover {
+    text-decoration: underline;
+}
+
+  
+  .text {
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  .navbar-brand, .nav-link {
+      font-weight: bold;
+      color:black;
+    }
+
+    .nav-link:hover {
+      color: #007bff;
+    }
+	
+    footer {
+      text-align: center;
+      padding: 25px;
+      font-size: 20px;
+      background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5FHNrwSRulKlCjGtW9NpWMqFExjGZsr50lg&s');
+  background-size: cover;');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+    }
+	
+
+    </style>
+	</head>
+	<body style="
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5FHNrwSRulKlCjGtW9NpWMqFExjGZsr50lg&s');
+  background-size: cover;');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+">
+    <!-- Navigation bar -->
+   
+			 <nav class="navbar navbar-expand-sm fixed-top" style="background-color: rgba(255, 255, 255, 0.1);">
+    <div class="container-fluid">
+      <a class="navbar-brand mx-5" href="#">CAD MODELING & FRONT-END DEVELOPER</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end mx-5" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="SIH.html"><b>HOME</b></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#About"><b>ABOUT ME</b></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#skl"><b>SKILLS</b></a>
+              </li>  
+              <li class="nav-item">
+                <a class="nav-link" href="#project"><b>PROJECT</b></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact"><b>CONTACT</b></a>
+              </li>  
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+    <div class="container-fluid bgc">
+        <div class="row d-flex">
+            <div class="col-sm-4 col-md-4 col-lg-4"><!--Image-->
+                <img src="C:\Users\pc\Downloads\1000125014.jpg" class="img-fluid rounded-5 shadow box justify-content-center align-items-center" alt="portfolio" style="width: 350px;margin-top: 150px;">
+                
+            </div>
+            <div class="col-sm-8 col-md-8 col-lg-8 mt-5 "><!--get to know me text-->
+                <h6 class="text-secondary justify-content-center text-center mt-5">Get to know more</h6>
+                <h2 class="justify-content-center text-center" style="font-family: sans-serif;" id="About"><b>About Me &#128483</b></h2>
+                
+                <div class="row  d-flex" style="margin-top: 80px;"><!--padding box 1-->
+                    <div class="col mx-5 mt-3 rounded-4" style="background-color: rgb(255, 255, 255,0.1);padding: 50px;  border: 2px solid #b6b6b6;">
+                        <i class="fa-solid fa-school d-flex align-items-center justify-content-center" style="font-size: 20px;"></i><br><br>
+                        <h5 class="justify-content-center text-center">SCHOOL</h5>
+                        <h6 class="justify-content-center text-center text-secondary">Government hr. sec. School SSLC-(2021)</h6>
+                        <h6 class="justify-content-center text-center text-secondary">Government hr. sec. School HSC-(2023)</h6>
+                    </div><!--padding box 1-->
+                    <div class="col mx-5 rounded-4 mt-3" style="background-color: rgb(255, 255, 255,0.1);padding: 50px;border: 2px solid #b6b6b6;">               
+                        <i class="fa-solid fa-graduation-cap d-flex align-items-center justify-content-center" style="font-size: 20px;"></i><br><br>
+                        <h5 class="justify-content-center text-center">COLLEGE</h5>
+                        <h6 class="justify-content-center text-center text-secondary">KGISL institute of technology <br>B.E -(2023)</h6>
+                        
+            
+                    </div>
+                    <div class="row"><!--about me para-->
+                        <div class="col mt-5">
+                            <p class=" justify-content-center mx-5 mb-5 text-dark">Hi, <span class="text-dark"> I’m Nithishkumar, a second-year B.E. Mechanical Engineering student at KGiSL Institute of Technology. I have a strong interest in CAD modeling and web design, which allows me to combine creativity with technical skills. I'm passionate about exploring how design and technology can solve real-world problems. I've also worked on projects that have helped me apply theoretical knowledge into practical applications, and one of my proudest achievements is successfully completing a project that showcased both innovation and teamwork. I’m continuously striving to learn more, take on challenges, and grow both academically and personally. My goal is to build a career where I can contribute meaningfully in the field of design and engineering.</p>
+</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Skills -->
+    <div class="container-fluid bg1c" >
+        <div class="row">
+            <div class="row"><!-- Center wording -->
+                <div class="col d-flex justify-content-center mt-5">
+                    <h2 class="text-success mt-2"><b>SKILLS &#128736</b></h2>
+                </div>
+            </div>
+
+           
+           
+            <!-- center padding -->
+            <div class="col-sm-4 col-md-4 col-lg-4 p-5 shadow box rounded-5" id="skl" style="background-color: rgb(255, 255, 255,0.1);border: 2px solid #157e00;">
+                <ul>
+				 <center><b>&#128204Technical Skills: </b></center> 
+                <li class="mt-4 ">Frontend-<span class="text-success"><b>HTML, CSS, python at 50%</b></span></li>
+                <li class="mt-4 ">CAD MODELING-<span class="text-success"><b>soildworks</b></span></li>
+				<h1></h1>
+				  <center><b>&#128204Non-Technical Skills: </b></center> 
+                <li class="mt-4 ">work-<span class="text-success"><b> ppt making, project making, team leadership, time management</b></span></li>
+				  
+            </ul>
+            </div>
+
+  <div class="col-sm-4 col-md-4 col-lg-4 p-5 shadow box rounded-5" id="skl" style="background-color: rgb(255, 255, 255,0.1);border: 2px solid #157e00;">
+                <ul>
+				
+				  <center><b>&#128204 Certificates:</b></center> 
+				<li class="mt-4 ">Coursera:click me-<span class="text-success"><b></b></span></li>
+				 <li class="mt-4 ">internship:click me-<span class="text-success"><b></b></span></li>
+				 
+            </ul>
+            </div>
+  <div class="col-sm-4 col-md-4 col-lg-4 p-5 shadow box rounded-5" id="skl" style="background-color: rgb(255, 255, 255,0.1);border: 2px solid #157e00;">
+                <ul>
+				
+				  <center><b>&#128204company experience: </b></center> 
+				  <li class="mt-4 "><span class="text-success"><b></b></span></li>
+               
+            </ul>
+            </div>
+
+            
+           
+        </div>
+    </div>
+<!-- My Works -->
+    <div class="container-fluid mt-5" id="project">
+    <div class="col d-flex justify-content-center align-items-center mt-5">
+        <h2 class="mt-5"><b>PROJECT</b></h2><br>
+    </div>
+
+    <!-- image row -->
+    <div class="row mt-5">
+        <!-- First Year -->
+        <div class="col-sm-4 con position-relative">
+            <img src="https://ipst.education/wp-content/uploads/2025/03/educational-games.jpg" alt="" class="img-fluid rounded-5 mt-3">
+            <div class="overlay">
+                <div class="text">
+                    <h3>First Year</h3>
+                    <ul>
+                        <li>Educational Gaming (PyExpo)</li>
+                        <li>Four-in-One Ground Cleaning Machine (Science Expo)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Second Year -->
+        <div class="col-sm-4 con position-relative">
+            <img src="project2.png" alt="" class="img-fluid rounded-5 mt-3">
+            <div class="overlay">
+                <div class="text">
+                    <h3>Second Year</h3>
+                    <ul>
+                        <li>Free Power Generator (Smart India Hackathon)</li>
+						
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Third Year or Others -->
+        <div class="col-sm-4 con position-relative">
+            <img src="project3.png" alt="" class="img-fluid rounded-5 mt-3">
+            <div class="overlay">
+                <div class="text">
+                    <h3>Third Year</h3>
+                    <ul>
+                        <li>Calculator Web App</li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/adhwanth-d-5937791ba/" target="_blank">
+                                <i class="fa-brands fa-linkedin-in"></i> LinkedIn
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/ADHWANTH" target="_blank">
+                                <i class="fa-brands fa-github"></i> GitHub
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://adhwanth.github.io/Calculator/" target="_blank">
+                                <i class="fa fa-external-link"></i> Live Demo
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+           
+<!-- REUME -->
+        <div class="container d-flex justify-content-center align-items-center">
+            <div class="row ">
+                <div class="col-sm-12 d-flex" style="flex-direction: column;">
+                    <h2 class="text-center mt-5"><b>RESUME</b></h2>
+                    <img src="Resume.png" alt="" class="img-fluid mt-2 rounded-4 shadow box">
+                    <button class="btn btn-outline-dark mt-5"><a href="C:\Users\pc\Downloads\Green Elegant Professional Resume_20250513_213206_0000.png" class="a" style="text-decoration: none;" id="b"><i class="fa-solid fa-file"></i> VIEW</a></button>
+                </div>
+            </div>
+
+        </div>
+<!-- contact -->
+<div class="container mt-5 bg3c" id="contact">
+    <div class="row mt-5">
+        <div class="col-lg-6 p-5 shadow rounded-5 text-white fade-right py-3" style="border: 4px solid rgb(100, 100, 100);">
+          <h3 id="redcolor" style="display: flex; justify-content: center;color: #000000;">SEND MESSAGE</h3>
+            <br>
+          
+              <form name="submit-to-google-sheet">
+                <div class="form-group">
+                  <br>
+                  <input type="email" name="Email" class="form-control" id="inputEmail" placeholder="Enter your email" required="">
+                </div>
+                <div class="form-group">
+                  <br>
+                  <input type="txt" name="Name" class="form-control" id="inputName" placeholder="Enter your Name" required="">
+                </div>
+                <div class="form-group">
+                 <br>
+                  <textarea name="Massage" class="form-control" id="inputMessage" rows="10" placeholder="Enter your message" required=""></textarea>
+                </div><br>
+                <div id="center">
+                <button type="submit" class="btn btn-outline-dark" style="margin: auto;" id="hover">Submit</button>
+                </div>
+              </form>
+              <span id="msg" style="display: flex; justify-content: center;color: rgb(15, 66, 6);"><b></b></span>
+             
+        </div><br><br>
+       <div class="col-lg-6 mt-5">
+            <h3 id="center" style="color: rgb(0, 0, 0);" class="text-uppercase text-center mt-5">Contact</h3><br><br><br>
+              <a href="mailto:nithiskumarguru40@gmail.com" style="text-decoration: none;color: rgb(0, 0, 0);"><h5 class=" mx-5 fade-right2 text-center"><i class="fa-regular fa-envelope" style="font-size:30px;color:rgb(0, 0, 0)"></i> nithiskumarguru40@gmail.com</h5></a><br>
+              <a href="tel:7904413430" id="phone" style="text-decoration: none;color: #000000;"><h5 class="mx-5 fade-right3 text-center"><i class="fa-solid fa-phone" style="font-size:30px;color:rgb(0, 0, 0)"></i> +91 9500870791</h5></a><br>
+              <a href=" https://wa.me/qr/P6WHLFHHMZM6E1" style="text-decoration: none;color: #000000;"><h5 class="mx-5 text-center"><i class="fa-brands fa-whatsapp " style=" color: black;font-size: 30px;"></i> Nithishkumar/whatsapp</h5></a>
+                <a href="https://github.com/NITHISHKUMAR0123" style="text-decoration: none;color: #000000;"><h5 class="mx-5 text-center"><i class="fa-brands fa-github " style=" color: black;font-size: 30px;"></i> Nithishkumar/GITHUB</h5></a>
+                <a href=" https://www.instagram.com/nithis2813?igsh=cXMybGsyeXo3bTlq" style="text-decoration: none;color: #000000;"><h5 class="mx-5 text-center"><i class="fa-brands fa-instagram " style=" color: black;font-size: 30px;"></i> Nithishkumar/instagram</h5></a>
+                <a href="https://www.facebook.com/share/15ZV98yaqk/?mibextid=qi2Omg" style="text-decoration: none;color: #000000;"><h5 class="mx-5 text-center"><i class="fa-brands fa-facebook " style=" color: black;font-size: 30px;"></i> Nithishkumar/fackbook</h5></a>
+               <a href="https://www.linkedin.com/in/nithishkumar-g-1aa940281?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="mt-5" style="text-decoration: none;color: #000000;"><h5 class="mx-5 text-center"><i class="fa-brands fa-linkedin-in" style=" color: black;font-size: 30px;"></i> Nithishkumar/LINKEDIN</h5></a>
+            
+</div>
+        </div>
+    </div>
+</div>
+
+ <footer>
+  copy rights  &copy;  2025 Nithishkumar . All Rights Reserved.&#129505
+  </footer>
+
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyGtMYGwVEIFKrWqLZfyxg4889rsGVBW1wDz7gxR6XPz-cDvJG6ge_cPYBj6oJtKOar/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent Successfully"
+            setTimeout(function(){
+            msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+
+</body>
+</html>
